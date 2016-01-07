@@ -1,15 +1,14 @@
 /**
- * Theme Name:  Vaidus World
- * Theme URI:   http://vaidusworld.com
- * Description: Custom theme for VaidusWorld, built on Hybrid framework, design from Anahita
- * Version:     1.0.2
+ * Theme Name:  Magik Starter theme
+ * Theme URI:   http://magikpress.com
+ * Description: Starter theme for WordPress, built on Hybrid framework, with sane starter css
+ * Version:     0.1
  * Author:      Gaurav Pareek
  * Author URI:  https://grv.rocks
  * Tags:        one-column, two-columns, custom-background, custom-header, custom-menu, featured-images, left-sidebar, post-formats, responsive-layout, right-sidebar, rtl-language-support, threaded-comments, translation-ready
  * Text Domain: vaidusworld
  * License:     GNU General Public License v2.0 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * GitHub Theme URI: grvrulz/vaidusworld
  */
 
 /**
@@ -36,7 +35,7 @@ html {}
 body {
 	background-color: #f4f4f4;
 	color: #999;
-	font-family: Lora, serif;
+	font-family: Lato, serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.625;
@@ -90,8 +89,8 @@ h4,
 h5,
 h6 {
 	color: #999;
-	font-family: 'Dancing Script', cursive;
-	font-weight: 400;
+	font-family: Lato, cursive;
+	font-weight: 300;
 	line-height: 1.2;
 	margin: 0 0 20px;
 }
