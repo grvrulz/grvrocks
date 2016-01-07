@@ -15,7 +15,7 @@ function vaidusworld_custom_background_setup() {
 	add_theme_support(
 		'custom-background',
 		array(
-			'default-color'    => 'ffffff',
+			'default-color'    => 'eeeeee',
 			'default-image'    => '',
 			'wp-head-callback' => 'vaidusworld_custom_background_callback',
 		)

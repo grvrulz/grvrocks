@@ -15,11 +15,14 @@
 
 		<header <?php hybrid_attr( 'header' ); ?>>
 
+			<div class="wrap">
+
 				<div <?php hybrid_attr( 'branding' ); ?>>
 					<?php hybrid_site_title(); ?>
 					<?php hybrid_site_description(); ?>
 				</div><!-- #branding -->
 
+			</div><!-- wrap -->
 		</header><!-- #header -->
 		
 		<?php hybrid_get_menu( 'primary' ); // Loads the menu/primary.php template. ?>
