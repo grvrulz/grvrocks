@@ -22,7 +22,7 @@
 
 		<footer class="entry-footer">
 			<?php hybrid_post_terms( array( 'taxonomy' => 'category', 'text' => esc_html__( 'Posted in %s', 'vaidusworld' ) ) ); ?>
-			<?php hybrid_post_terms( array( 'taxonomy' => 'post_tag', 'text' => esc_html__( 'Tagged %s', 'vaidusworld' ), 'before' => '<br />' ) ); ?>
+			<?php hybrid_post_terms( array( 'taxonomy' => 'post_tag', 'text' => esc_html__( 'Tagged %s', 'vaidusworld' ) ) ); ?>
 		</footer><!-- .entry-footer -->
 
 	<?php else : // If not viewing a single post. ?>
@@ -41,13 +41,13 @@
 		</header><!-- .entry-header -->
 
 		<div <?php hybrid_attr( 'entry-summary' ); ?>>
-			<?php get_the_image( array( 'size' => 'medium', 'image_class' => 'alignleft' ) ); ?>
+			<?php get_the_image(); ?>
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
 		
 		<footer class="entry-footer">
 			<?php hybrid_post_terms( array( 'taxonomy' => 'category', 'text' => esc_html__( 'Posted in %s', 'vaidusworld' ) ) ); ?>
-			<?php hybrid_post_terms( array( 'taxonomy' => 'post_tag', 'text' => esc_html__( 'Tagged %s', 'vaidusworld' ), 'before' => '<br />' ) ); ?>
+			<?php hybrid_post_terms( array( 'taxonomy' => 'post_tag', 'text' => esc_html__( 'Tagged %s', 'vaidusworld' ) ) ); ?>
 		</footer><!-- .entry-footer -->
 
 	<?php endif; // End single post check. ?>

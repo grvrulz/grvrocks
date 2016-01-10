@@ -39,6 +39,7 @@ function vaidusworld_register_image_sizes() {
 function vaidusworld_register_menus() {
 	register_nav_menu( 'primary',    esc_html_x( 'Primary',    'nav menu location', 'vaidusworld' ) );
 	register_nav_menu( 'secondary',  esc_html_x( 'Secondary',  'nav menu location', 'vaidusworld' ) );
+	register_nav_menu( 'subsidiary',  esc_html_x( 'Subsidiary',  'nav menu location', 'vaidusworld' ) );
 }
 
 /**
