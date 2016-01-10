@@ -19,7 +19,7 @@
 			<h1 <?php hybrid_attr( 'entry-title' ); ?>><?php single_post_title(); ?></h1>
 
 			<div class="entry-byline">
-				<span class="image-sizes"><?php printf( esc_html__( 'Sizes: %s', 'vaidusworld' ), hybrid_get_image_size_links() ); ?></span>
+				<span class="image-sizes"><?php printf( esc_html__( 'Sizes: %s', 'magik' ), hybrid_get_image_size_links() ); ?></span>
 			</div><!-- .entry-byline -->
 
 		</header><!-- .entry-header -->
@@ -56,20 +56,20 @@
 
 		<div class="media-info image-info">
 
-			<h3 class="attachment-meta-title"><?php esc_html_e( 'Image Info', 'vaidusworld' ); ?></h3>
+			<h3 class="attachment-meta-title"><?php esc_html_e( 'Image Info', 'magik' ); ?></h3>
 
 			<ul class="media-meta">
 				<?php $pre = '<li><span class="prep">%s</span>'; ?>
-				<?php hybrid_media_meta( 'dimensions',        array( 'before' => sprintf( $pre, esc_html__( 'Dimensions',    'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'created_timestamp', array( 'before' => sprintf( $pre, esc_html__( 'Date',          'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'camera',            array( 'before' => sprintf( $pre, esc_html__( 'Camera',        'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'aperture',          array( 'before' => sprintf( $pre, esc_html__( 'Aperture',      'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'focal_length',      array( 'before' => sprintf( $pre, esc_html__( 'Focal Length',  'vaidusworld' ) ), 'after' => '</li>', 'text' => esc_html__( '%s mm', 'vaidusworld' ) ) ); ?>
-				<?php hybrid_media_meta( 'iso',               array( 'before' => sprintf( $pre, esc_html__( 'ISO',           'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'shutter_speed',     array( 'before' => sprintf( $pre, esc_html__( 'Shutter Speed', 'vaidusworld' ) ), 'after' => '</li>', 'text' => esc_html__( '%s sec', 'vaidusworld' ) ) ); ?>
-				<?php hybrid_media_meta( 'file_type',         array( 'before' => sprintf( $pre, esc_html__( 'Type',          'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'file_name',         array( 'before' => sprintf( $pre, esc_html__( 'Name',          'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'mime_type',         array( 'before' => sprintf( $pre, esc_html__( 'Mime Type',     'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'dimensions',        array( 'before' => sprintf( $pre, esc_html__( 'Dimensions',    'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'created_timestamp', array( 'before' => sprintf( $pre, esc_html__( 'Date',          'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'camera',            array( 'before' => sprintf( $pre, esc_html__( 'Camera',        'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'aperture',          array( 'before' => sprintf( $pre, esc_html__( 'Aperture',      'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'focal_length',      array( 'before' => sprintf( $pre, esc_html__( 'Focal Length',  'magik' ) ), 'after' => '</li>', 'text' => esc_html__( '%s mm', 'magik' ) ) ); ?>
+				<?php hybrid_media_meta( 'iso',               array( 'before' => sprintf( $pre, esc_html__( 'ISO',           'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'shutter_speed',     array( 'before' => sprintf( $pre, esc_html__( 'Shutter Speed', 'magik' ) ), 'after' => '</li>', 'text' => esc_html__( '%s sec', 'magik' ) ) ); ?>
+				<?php hybrid_media_meta( 'file_type',         array( 'before' => sprintf( $pre, esc_html__( 'Type',          'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'file_name',         array( 'before' => sprintf( $pre, esc_html__( 'Name',          'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'mime_type',         array( 'before' => sprintf( $pre, esc_html__( 'Mime Type',     'magik' ) ), 'after' => '</li>' ) ); ?>
 			</ul>
 
 		</div><!-- .media-info -->
@@ -79,7 +79,7 @@
 		<?php if ( $gallery ) : // Check if the gallery is not empty. ?>
 
 			<div class="image-gallery">
-				<h3 class="attachment-meta-title"><?php esc_html_e( 'Gallery', 'vaidusworld' ); ?></h3>
+				<h3 class="attachment-meta-title"><?php esc_html_e( 'Gallery', 'magik' ); ?></h3>
 				<?php echo $gallery; ?>
 			</div>
 

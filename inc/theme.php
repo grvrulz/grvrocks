@@ -1,20 +1,20 @@
 <?php
 
 # Register custom image sizes.
-add_action( 'init', 'vaidusworld_register_image_sizes', 5 );
+add_action( 'init', 'magik_register_image_sizes', 5 );
 
 # Register custom menus.
-add_action( 'init', 'vaidusworld_register_menus', 5 );
+add_action( 'init', 'magik_register_menus', 5 );
 
 # Register custom layouts.
-add_action( 'hybrid_register_layouts', 'vaidusworld_register_layouts' );
+add_action( 'hybrid_register_layouts', 'magik_register_layouts' );
 
 # Register sidebars.
-add_action( 'widgets_init', 'vaidusworld_register_sidebars', 5 );
+add_action( 'widgets_init', 'magik_register_sidebars', 5 );
 
 # Add custom scripts and styles
-add_action( 'wp_enqueue_scripts', 'vaidusworld_enqueue_scripts', 5 );
-add_action( 'wp_enqueue_scripts', 'vaidusworld_enqueue_styles',  5 );
+add_action( 'wp_enqueue_scripts', 'magik_enqueue_scripts', 5 );
+add_action( 'wp_enqueue_scripts', 'magik_enqueue_styles',  5 );
 
 /**
  * Registers custom image sizes for the theme.
@@ -23,7 +23,7 @@ add_action( 'wp_enqueue_scripts', 'vaidusworld_enqueue_styles',  5 );
  * @access public
  * @return void
  */
-function vaidusworld_register_image_sizes() {
+function magik_register_image_sizes() {
 
 	// Sets the 'post-thumbnail' size.
 	//set_post_thumbnail_size( 150, 150, true );
@@ -36,10 +36,10 @@ function vaidusworld_register_image_sizes() {
  * @access public
  * @return void
  */
-function vaidusworld_register_menus() {
-	register_nav_menu( 'primary',    esc_html_x( 'Primary',    'nav menu location', 'vaidusworld' ) );
-	register_nav_menu( 'secondary',  esc_html_x( 'Secondary',  'nav menu location', 'vaidusworld' ) );
-	register_nav_menu( 'subsidiary',  esc_html_x( 'Subsidiary',  'nav menu location', 'vaidusworld' ) );
+function magik_register_menus() {
+	register_nav_menu( 'primary',    esc_html_x( 'Primary',    'nav menu location', 'magik' ) );
+	register_nav_menu( 'secondary',  esc_html_x( 'Secondary',  'nav menu location', 'magik' ) );
+	register_nav_menu( 'subsidiary',  esc_html_x( 'Subsidiary',  'nav menu location', 'magik' ) );
 }
 
 /**
@@ -49,11 +49,11 @@ function vaidusworld_register_menus() {
  * @access public
  * @return void
  */
-function vaidusworld_register_layouts() {
+function magik_register_layouts() {
 
-	hybrid_register_layout( '1c',   array( 'label' => esc_html__( '1 Column',                     'vaidusworld' ), 'image' => '%s/images/layouts/1c.png'   ) );
-	hybrid_register_layout( '2c-l', array( 'label' => esc_html__( '2 Columns: Content / Sidebar', 'vaidusworld' ), 'image' => '%s/images/layouts/2c-l.png' ) );
-	hybrid_register_layout( '2c-r', array( 'label' => esc_html__( '2 Columns: Sidebar / Content', 'vaidusworld' ), 'image' => '%s/images/layouts/2c-r.png' ) );
+	hybrid_register_layout( '1c',   array( 'label' => esc_html__( '1 Column',                     'magik' ), 'image' => '%s/images/layouts/1c.png'   ) );
+	hybrid_register_layout( '2c-l', array( 'label' => esc_html__( '2 Columns: Content / Sidebar', 'magik' ), 'image' => '%s/images/layouts/2c-l.png' ) );
+	hybrid_register_layout( '2c-r', array( 'label' => esc_html__( '2 Columns: Sidebar / Content', 'magik' ), 'image' => '%s/images/layouts/2c-r.png' ) );
 }
 
 /**
@@ -63,37 +63,37 @@ function vaidusworld_register_layouts() {
  * @access public
  * @return void
  */
-function vaidusworld_register_sidebars() {
+function magik_register_sidebars() {
 
 	hybrid_register_sidebar(
 		array(
 			'id'          => 'primary',
-			'name'        => esc_html_x( 'Primary', 'sidebar', 'vaidusworld' ),
-			'description' => esc_html__( 'Add sidebar description.', 'vaidusworld' )
+			'name'        => esc_html_x( 'Primary', 'sidebar', 'magik' ),
+			'description' => esc_html__( 'Add sidebar description.', 'magik' )
 		)
 	);
 
 	hybrid_register_sidebar(
 		array(
 			'id'          => 'footer-1',
-			'name'        => esc_html_x( 'Footer 1', 'sidebar', 'vaidusworld' ),
-			'description' => esc_html__( 'Add sidebar description.', 'vaidusworld' )
+			'name'        => esc_html_x( 'Footer 1', 'sidebar', 'magik' ),
+			'description' => esc_html__( 'Add sidebar description.', 'magik' )
 		)
 	);
 
 	hybrid_register_sidebar(
 		array(
 			'id'          => 'footer-2',
-			'name'        => esc_html_x( 'Footer 2', 'sidebar', 'vaidusworld' ),
-			'description' => esc_html__( 'Add sidebar description.', 'vaidusworld' )
+			'name'        => esc_html_x( 'Footer 2', 'sidebar', 'magik' ),
+			'description' => esc_html__( 'Add sidebar description.', 'magik' )
 		)
 	);
 
 	hybrid_register_sidebar(
 		array(
 			'id'          => 'footer-3',
-			'name'        => esc_html_x( 'Footer 3', 'sidebar', 'vaidusworld' ),
-			'description' => esc_html__( 'Add sidebar description.', 'vaidusworld' )
+			'name'        => esc_html_x( 'Footer 3', 'sidebar', 'magik' ),
+			'description' => esc_html__( 'Add sidebar description.', 'magik' )
 		)
 	);
 }
@@ -105,7 +105,7 @@ function vaidusworld_register_sidebars() {
  * @access public
  * @return void
  */
-function vaidusworld_enqueue_scripts() {
+function magik_enqueue_scripts() {
 }
 
 /**
@@ -115,7 +115,7 @@ function vaidusworld_enqueue_scripts() {
  * @access public
  * @return void
  */
-function vaidusworld_enqueue_styles() {
+function magik_enqueue_styles() {
 
 	// Load one-five base style.
 	wp_enqueue_style( 'hybrid-one-five' );

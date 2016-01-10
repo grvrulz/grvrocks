@@ -24,21 +24,21 @@
 
 		<div class="media-info">
 
-			<h3><?php esc_html_e( 'Audio Info', 'vaidusworld' ); ?></h3>
+			<h3><?php esc_html_e( 'Audio Info', 'magik' ); ?></h3>
 
 			<ul class="media-meta">
 				<?php $pre = '<li><span class="prep">%s</span>'; ?>
-				<?php hybrid_media_meta( 'length_formatted', array( 'before' => sprintf( $pre, esc_html__( 'Run Time',  'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'artist',           array( 'before' => sprintf( $pre, esc_html__( 'Artist',    'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'composer',         array( 'before' => sprintf( $pre, esc_html__( 'Composer',  'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'album',            array( 'before' => sprintf( $pre, esc_html__( 'Album',     'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'track_number',     array( 'before' => sprintf( $pre, esc_html__( 'Track',     'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'year',             array( 'before' => sprintf( $pre, esc_html__( 'Year',      'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'genre',            array( 'before' => sprintf( $pre, esc_html__( 'Genre',     'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'file_type',        array( 'before' => sprintf( $pre, esc_html__( 'Type',      'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'file_name',        array( 'before' => sprintf( $pre, esc_html__( 'Name',      'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'file_size',        array( 'before' => sprintf( $pre, esc_html__( 'Size',      'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
-				<?php hybrid_media_meta( 'mime_type',        array( 'before' => sprintf( $pre, esc_html__( 'Mime Type', 'vaidusworld' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'length_formatted', array( 'before' => sprintf( $pre, esc_html__( 'Run Time',  'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'artist',           array( 'before' => sprintf( $pre, esc_html__( 'Artist',    'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'composer',         array( 'before' => sprintf( $pre, esc_html__( 'Composer',  'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'album',            array( 'before' => sprintf( $pre, esc_html__( 'Album',     'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'track_number',     array( 'before' => sprintf( $pre, esc_html__( 'Track',     'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'year',             array( 'before' => sprintf( $pre, esc_html__( 'Year',      'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'genre',            array( 'before' => sprintf( $pre, esc_html__( 'Genre',     'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'file_type',        array( 'before' => sprintf( $pre, esc_html__( 'Type',      'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'file_name',        array( 'before' => sprintf( $pre, esc_html__( 'Name',      'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'file_size',        array( 'before' => sprintf( $pre, esc_html__( 'Size',      'magik' ) ), 'after' => '</li>' ) ); ?>
+				<?php hybrid_media_meta( 'mime_type',        array( 'before' => sprintf( $pre, esc_html__( 'Mime Type', 'magik' ) ), 'after' => '</li>' ) ); ?>
 			</ul>
 
 		</div><!-- .media-info -->
