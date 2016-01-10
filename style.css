@@ -149,9 +149,18 @@ abbr {}
 
 /* === Code and Preformatted text === */
 
-code {}
+code {
+	padding: 3px;
+}
 
-pre {}
+code,
+pre {
+	font-family: 'Droid Sans Mono', monospace;
+	font-size: 14px;
+	background: #1d1d1d;
+	color: #fafafa;
+	border-radius: 3px;
+}
 
 	pre code {}
 
@@ -180,25 +189,83 @@ dl {}
 
 /* === Tables === */
 
-table {}
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
 
-	caption {}
+	caption {
+		margin: 0 0 5px;
+		font-variant: small-caps;
+	}
 
-	thead {}
+	thead {
+		border-bottom: 1px solid;
+	}
 
-	tfoot {}
+	tfoot {
+		border-top: 1px solid;
+	}
 
 	tbody {}
 
-	tr {}
+	tr {
+		border-bottom: 1px solid;
+	}
 
-	th {}
-
-	td {}
+	th {
+		font-weight:    700;
+		text-transform: uppercase;
+	}
+	
+	td {
+		border: 1px solid;
+	}
+	
+	th,
+	td {
+		padding: 10px;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	th:empty,
+	td:empty,
+	th.pad,
+	td.pad { 
+		opacity: 0; 
+	}
 
 	/* wp-calendar <table> */
 
-	#wp-calendar {}
+	.wp-calendar th { 
+		font-size: 0.75rem; 
+	}
+
+		.wp-calendar td,
+		.wp-calendar th {
+			padding: 5px 2%;
+			vertical-align: middle;
+			text-align:     center;
+		}
+
+		.wp-calendar th { 
+			padding: 10px 2%; 
+		}
+
+		/* .has-posts added via jQuery. */
+
+		.wp-calendar tbody td.has-posts {
+			padding:  0;
+		}
+
+			.wp-calendar td.has-posts a {
+				display: block;
+				padding: 5px 2%;
+				font-weight: 700;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
 
 /* === Embeds === */
 
@@ -310,7 +377,9 @@ form {}
 
 .aligncenter {}
 
-.alignnone {}
+.alignnone {
+	margin: 40px 0;
+}
 
 
 /**
@@ -320,6 +389,9 @@ form {}
 img {
 	max-width: 100%;
 	height: auto;
+	background: #f1f1f1;
+	padding: 10px;
+	box-sizing: border-box;
 }
 
 	a img {}
@@ -342,9 +414,16 @@ img.size-full {}
 
 .wp-caption {
 	max-width: 100%;
+	background: #f1f1f1;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
 }
 
-	.wp-caption img {}
+	.wp-caption img {
+		padding: 0;
+		background: none;
+	}
 
 	.wp-caption-text {}
 
@@ -613,13 +692,11 @@ img.size-full {}
 		}
 		
 		.menu .sub-menu a {
-			border: 1px solid #eee;
-			border-top: 0;
 			padding: 16px 12px;
 			text-align: left;
 		}
 			.menu .sub-menu .sub-menu {
-				margin: -55px 0 0 199px;
+				margin: -55px 0 0 201px;
 			}
 		
 		.menu li:hover > ul,
@@ -647,8 +724,6 @@ img.size-full {}
 			}
 			
 			#menu-primary .sub-menu a {
-				border: 1px solid #f4f4f4;
-				border-top: 0;
 			}
 
 			#menu-primary li {}
