@@ -106,6 +106,7 @@ function magik_register_sidebars() {
  * @return void
  */
 function magik_enqueue_scripts() {
+	wp_enqueue_script( 'hybrid-mobile-toggle' );
 }
 
 /**
