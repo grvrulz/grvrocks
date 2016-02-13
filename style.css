@@ -1406,6 +1406,7 @@ img.size-full {}
 	.menu-toggle button {
 		position: relative;
 		top:      0;
+		padding: 14px 12px;
 
 	}
 
@@ -1422,7 +1423,7 @@ img.size-full {}
 		vertical-align: middle;
 		-webkit-font-smoothing: antialiased;
 		line-height: 24px;
-		padding: 0 6px 0 0;
+		padding: 0;
 	}
 
 	#menu-secondary .menu-toggle button::after {
@@ -1438,6 +1439,7 @@ img.size-full {}
 		background: #333333;
 		margin-left: -3%;
 		margin-right: -3%;
+		z-index: 9;
 	}
 
 	#menu-secondary .wrap {
