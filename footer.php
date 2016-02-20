@@ -1,5 +1,5 @@
 			<?php hybrid_get_sidebar( 'primary' ); // Loads the sidebar/primary.php template. ?>
-			</div><!-- .wrap -->
+
 		</div><!-- #main -->
 
 		<?php hybrid_get_sidebar( 'footer' ); // Loads the sidebar/subsidiary.php template. ?>
@@ -14,7 +14,7 @@
 				); ?>
 			</p><!-- .credit -->
 			<p class="credit">
-				<?php 
+				<?php
 				echo __( 'Built with <big>&hearts;</big> at <a href="https://magikpress.com">MagikPress</a>', 'magik' );
 				?>
 			</p>

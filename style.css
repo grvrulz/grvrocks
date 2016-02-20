@@ -546,11 +546,10 @@ img.size-full {}
 }
 
 
-	#container {}
-
-	.wrap {
-		max-width: 1200px;
-		margin: 0 auto;
+	#container {
+		max-width: 800px;
+		padding: 40px;
+		margin: 60px auto;
 	}
 
 		.layout-1c #container {}
@@ -1362,10 +1361,7 @@ img.size-full {}
  * --------------------------------------------------------------------------- */
 
 @media only screen and ( max-width: 1200px) {
-	.wrap {
-		padding-left: 3%;
-		padding-right: 3%;
-	}
+
 }
 
 @media only screen and ( max-width: 800px) {
