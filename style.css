@@ -565,7 +565,7 @@ img.size-full {}
 		}
 
 		#main {
-			padding: 60px 0;
+			padding: 0;
 		}
 
 		#footer {}
@@ -1203,7 +1203,9 @@ img.size-full {}
 
 /* ====== RESPOND (COMMENT FORM) ====== */
 
-#respond {}
+#respond {
+	padding: 60px;
+}
 
 	#reply-title {}
 
