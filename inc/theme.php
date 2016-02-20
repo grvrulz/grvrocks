@@ -6,12 +6,6 @@ add_action( 'init', 'magik_register_image_sizes', 5 );
 # Register custom menus.
 add_action( 'init', 'magik_register_menus', 5 );
 
-# Register custom layouts.
-add_action( 'hybrid_register_layouts', 'magik_register_layouts' );
-
-# Register sidebars.
-add_action( 'widgets_init', 'magik_register_sidebars', 5 );
-
 # Add custom scripts and styles
 add_action( 'wp_enqueue_scripts', 'magik_enqueue_scripts', 5 );
 add_action( 'wp_enqueue_scripts', 'magik_enqueue_styles',  5 );
@@ -38,64 +32,8 @@ function magik_register_image_sizes() {
  */
 function magik_register_menus() {
 	register_nav_menu( 'primary',    esc_html_x( 'Primary',    'nav menu location', 'magik' ) );
-	register_nav_menu( 'secondary',  esc_html_x( 'Secondary',  'nav menu location', 'magik' ) );
-	register_nav_menu( 'subsidiary',  esc_html_x( 'Subsidiary',  'nav menu location', 'magik' ) );
-}
-
-/**
- * Registers layouts.
- *
- * @since  1.0.0
- * @access public
- * @return void
- */
-function magik_register_layouts() {
-
-	hybrid_register_layout( '1c',   array( 'label' => esc_html__( '1 Column',                     'magik' ), 'image' => '%s/images/layouts/1c.png'   ) );
-	hybrid_register_layout( '2c-l', array( 'label' => esc_html__( '2 Columns: Content / Sidebar', 'magik' ), 'image' => '%s/images/layouts/2c-l.png' ) );
-	hybrid_register_layout( '2c-r', array( 'label' => esc_html__( '2 Columns: Sidebar / Content', 'magik' ), 'image' => '%s/images/layouts/2c-r.png' ) );
-}
-
-/**
- * Registers sidebars.
- *
- * @since  1.0.0
- * @access public
- * @return void
- */
-function magik_register_sidebars() {
-
-	hybrid_register_sidebar(
-		array(
-			'id'          => 'primary',
-			'name'        => esc_html_x( 'Primary', 'sidebar', 'magik' ),
-			'description' => esc_html__( 'Add sidebar description.', 'magik' )
-		)
-	);
-
-	hybrid_register_sidebar(
-		array(
-			'id'          => 'footer-1',
-			'name'        => esc_html_x( 'Footer 1', 'sidebar', 'magik' ),
-			'description' => esc_html__( 'Add sidebar description.', 'magik' )
-		)
-	);
-
-	hybrid_register_sidebar(
-		array(
-			'id'          => 'footer-2',
-			'name'        => esc_html_x( 'Footer 2', 'sidebar', 'magik' ),
-			'description' => esc_html__( 'Add sidebar description.', 'magik' )
-		)
-	);
-
-	hybrid_register_sidebar(
-		array(
-			'id'          => 'footer-3',
-			'name'        => esc_html_x( 'Footer 3', 'sidebar', 'magik' ),
-			'description' => esc_html__( 'Add sidebar description.', 'magik' )
-		)
-	);
+	register_nav_menu( 'footer',  esc_html_x( 'Footer',  'nav menu location', 'magik' ) );
+	register_nav_menu( 'social',  esc_html_x( 'Social',  'nav menu location', 'magik' ) );
 }
 
 /**
