@@ -509,6 +509,7 @@ img.size-full {}
 .footer-widgets,
 #footer {
 	display: block;
+	box-sizing: border-box;
 }
 
 #container::before,
@@ -548,13 +549,10 @@ img.size-full {}
 
 	#container {
 		max-width: 800px;
-		padding: 40px;
+		padding: 0 40px;
 		margin: 60px auto;
+		background: rgba(255, 255, 255, 0.9);
 	}
-
-		.layout-1c #container {}
-		.layout-2c-l #container {}
-		.layout-2c-r #container {}
 
 		#header,
 		#menu-primary,
@@ -567,36 +565,6 @@ img.size-full {}
 			padding: 60px 0;
 		}
 
-			.layout-2c-l .content,
-			.layout-2c-r .content {
-				width: 65%;
-				float: left;
-			}
-
-			.layout-2c-l .sidebar-primary,
-			.layout-2c-r .sidebar-primary {
-				width: 30%;
-				float: right;
-			}
-
-			.layout-2c-r .content {
-				float: right;
-			}
-
-			.layout-2c-r .sidebar-primary {
-				float: left;
-			}
-
-			.layout-1c .content {
-				width: 100%;
-				float: none;
-				margin: 0 auto;
-			}
-
-			#sidebar-secondary {}
-
-		#sidebar-subsidiary {}
-
 		#footer {}
 
 /**
@@ -606,11 +574,21 @@ img.size-full {}
 #header {
 	background-color: #F4F4F4;
 	text-align: left;
-	padding: 30px 0;
+	padding: 0;
+	margin: 0;
+	visibility: hidden;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -9999;
+	opacity: 0;
+	clip: rect(0,0,0,0);
+	clip: rect(0 0 0 0);
 }
 
 	#branding {
-		width: 30%;
+		width: auto;
 		float:left;
 		text-align: left;
 	}
@@ -717,7 +695,7 @@ img.size-full {}
 
 #menu-primary {
 	background-color: transparent;
-	width: 65%;
+	width: 60%;
 	float: right;
 	text-align: right;
 }
