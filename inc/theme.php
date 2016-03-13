@@ -49,6 +49,7 @@ function magik_register_menus() {
  */
 function magik_enqueue_scripts() {
 	wp_enqueue_script( 'magik-mobile-js', get_template_directory_uri().'/js/main.js', array( 'jquery' ) );
+	wp_enqueue_script( 'hybrid-mobile-toggle' );
 }
 
 /**
