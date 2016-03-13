@@ -2,10 +2,6 @@
 
 	<nav <?php hybrid_attr( 'menu', 'social' ); ?>>
 
-		<h3 id="menu-social-title" class="menu-toggle">
-			<button class=""><span class="screen-reader-text"><?php echo hybrid_get_menu_name( 'social' ); ?></span></button>
-		</h3><!-- .menu-toggle -->
-
 		<?php wp_nav_menu(
 			array(
 				'theme_location'  => 'social',
