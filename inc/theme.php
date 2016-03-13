@@ -74,7 +74,6 @@ function magik_enqueue_styles() {
 	// Load active theme stylesheet.
 	wp_enqueue_style( 'hybrid-style' );
 
-	wp_enqueue_style( 'dashicons' );
 	wp_enqueue_style( 'google-fonts', '//fontlibrary.org/face/glacial-indifference', array(), 1.0 );
 }
 

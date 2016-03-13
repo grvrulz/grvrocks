@@ -64,7 +64,7 @@ function magik_theme_setup() {
 	add_theme_support( 'breadcrumb-trail' );
 
 	// Nicer [gallery] shortcode implementation.
-	add_theme_support( 'cleaner-gallery' );
+	//add_theme_support( 'cleaner-gallery' );
 
 	// Automatically add feed links to <head>.
 	add_theme_support( 'automatic-feed-links' );
