@@ -72,7 +72,7 @@ textarea:focus,
 /* === Links === */
 
 a {
-	color: #fa9581;
+	color: #CC2A41;
 	text-decoration: none;
 }
 
@@ -365,7 +365,7 @@ form {}
 	input:hover[type="reset"],
 	input:hover[type="submit"],
 	.button:hover {
-		background-color: #fa9581;
+		background-color: #CC2A41;
 		color: #fff;
 	}
 
@@ -872,7 +872,7 @@ img.size-full {}
 				color: #555;
 			}
 			.entry-title a:hover {
-				color: #fa9581;
+				color: #CC2A41;
 			}
 
 		.entry-byline {
@@ -1118,13 +1118,17 @@ img.size-full {}
 	.pagination .page-numbers {
 		padding: 8px 10px;
 		background: rgba(240,240,240,0.7);
-		border-radius: 2px;
+		border-radius: 4px;
 		margin: 0 3px;
-		box-shadow: 0 0 3px rgba(0,0,0,0.2);
+		border: 1px solid rgba(0,0,0,0.1);
+		box-shadow: 0 0 1px rgba(0,0,0,0.2);
 	}
 
 	.pagination a.page-numbers {}
-	.pagination a.page-numbers:hover {}
+	.pagination a.page-numbers:hover {
+		background: #CC2A41;
+		color: #ffffff;
+	}
 
 	.page-numbers.current {}
 
@@ -1389,7 +1393,7 @@ img.size-full {}
 	.footer-widgets input[type="reset"],
 	.footer-widgets input[type="submit"],
 	.footer-widgets .button {
-		background-color: #fa9581;
+		background-color: #CC2A41;
 		color: #fff;
 	}
 

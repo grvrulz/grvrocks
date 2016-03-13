@@ -21,7 +21,7 @@
 					<?php hybrid_site_title(); ?>
 				</div><!-- #branding -->
 
-				<?php //hybrid_get_menu( 'primary' ); // Loads the menu/primary.php template. ?>
+				<?php hybrid_get_menu( 'primary' ); // Loads the menu/primary.php template. ?>
 
 			</div><!-- wrap -->
 		</header><!-- #header -->
