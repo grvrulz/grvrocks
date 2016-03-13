@@ -881,6 +881,15 @@ img.size-full {}
 			margin-bottom: 14px;
 		}
 
+		.fl-builder .entry-title {
+			visibility: hidden;
+			padding: 0;
+			margin: 0;
+			height: 0;
+			clip: rect(0,0,0,0);
+			clip: rect(0 0 0 0);
+		}
+
 			.entry-title a {
 				color: #555;
 			}
