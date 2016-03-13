@@ -34,7 +34,7 @@ html {}
 
 body {
 	background-color: #eeeeee;
-	color: #999;
+	color: #555;
 	font-family: Roboto, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
@@ -60,7 +60,7 @@ textarea:focus,
 }
 
 ::-moz-selection {
-	background-color: #999;
+	background-color: #555;
 	color: #fff;
 }
 
@@ -88,7 +88,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #999;
+	color: #555;
 	font-family: Roboto, sans-serif;
 	font-weight: 300;
 	line-height: 1.2;
@@ -307,14 +307,14 @@ form {}
 		}
 
 		::-moz-placeholder {
-			color: #999;
+			color: #555;
 			font-weight: 400;
 			opacity: 1;
 			-webkit-font-smoothing: antialiased;
 		}
 
 		::-webkit-input-placeholder {
-			color: #999;
+			color: #555;
 			font-weight: 400;
 			-webkit-font-smoothing: antialiased;
 		}
@@ -474,7 +474,7 @@ img.size-full {}
 		padding: 4px;
 	}
 		.gallery img:hover {
-			border: 1px solid #999;
+			border: 1px solid #555;
 		}
 
 		.gallery-icon {}
@@ -715,7 +715,7 @@ img.size-full {}
 			#menu-primary li.current-menu-item {}
 
 				#menu-primary li a {
-					color: #999;
+					color: #555;
 				}
 				#menu-primary li a:hover,
 				#menu-primary li:hover > a {
@@ -751,6 +751,40 @@ img.size-full {}
 				#menu-secondary li:hover > a {}
 
 /* ====== Subsidiary Menu ====== */
+
+#menu-footer {
+
+}
+
+	#menu-footer .wrap {}
+
+		#menu-footer ul {
+			text-align: center;
+		}
+
+			#menu-footer li::after {
+				content: "•";
+				padding-left: 5px;
+				display: inline;
+			}
+
+			#menu-footer li:last-of-type::after {
+				content: '';
+			}
+
+			#menu-footer li.current-menu-item {}
+
+				#menu-footer li a {
+					color: #666;
+					padding: 5px;
+					display: inline-block;
+					font-weight: normal;
+				}
+				#menu-footer li a:hover,
+				#menu-footer li:hover > a {
+					text-decoration: none;
+					color: #555;
+				}
 
 
 
@@ -796,7 +830,7 @@ img.size-full {}
 /* ====== POSTS ====== */
 
 .entry  {
-	padding: 60px;
+	padding: 6% 8%;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
 }
@@ -819,7 +853,7 @@ img.size-full {}
 		}
 
 			.entry-title a {
-				color: #999;
+				color: #555;
 			}
 			.entry-title a:hover {
 				color: #fa9581;
@@ -1058,6 +1092,12 @@ img.size-full {}
 
 /* === Archive-type pages === */
 
+.archive-header {
+	padding: 4% 8% 3%;
+	text-align: center;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
 .pagination {
 	padding: 40px 60px;
 	text-align: center;
@@ -1135,7 +1175,7 @@ img.size-full {}
 		.widget-title {
 			font-size: 24px;
 			margin-bottom: 20px;
-			color: #999;
+			color: #555;
 		}
 
 /* ====== Specific ====== */
