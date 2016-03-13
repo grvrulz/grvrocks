@@ -1965,6 +1965,36 @@ img.size-full {}
 		padding: 0 30px;
 	}
 
+	.breadcrumb-trail,
+	.pagination,
+	.loop-nav,
+	#comments,
+	#respond {
+		padding: 20px 30px;
+	}
+
+}
+
+@media only screen and ( max-width: 560px) {
+	.entry {
+		padding: 15px;
+	}
+
+	#header {
+		padding: 0 15px;
+	}
+
+	.breadcrumb-trail,
+	.pagination,
+	.loop-nav,
+	#comments,
+	#respond {
+		padding: 15px;
+	}
+
+	#menu-primary .wrap {
+		right: 15px;
+	}
 
 }
 
