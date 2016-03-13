@@ -1268,12 +1268,16 @@ img.size-full {}
 
 		li.comment {
 			margin: 18px 0;
+			padding: 20px;
+			border: 1px solid rgba(0,0,0,0.2);
+			border-radius: 4px;
+			overflow: hidden;
 		}
 
 		li.ping {}
 
 		li.bypostauthor {
-			background: rgba(239, 239, 239,0.5);
+
 		}
 
 			/* === Avatars === */
@@ -1287,10 +1291,22 @@ img.size-full {}
 			/* === Meta === */
 
 			.comment-meta {
-				margin-bottom: 10px;
-				border-bottom: 1px dotted #ddd;
-				padding-bottom: 4px;
+				padding: 20px;
+				background-color: #424254;
+				color: #ffffff;
+				margin: -20px -20px 20px;
 			}
+
+				.comment-meta a {
+					color: #ffffff;
+					border-bottom: 1px solid rgba( 255, 255, 255, 0.5);
+				}
+
+				.comment-meta .comment-published::before {}
+
+				.comment-meta .comment-permalink::before {}
+
+				.comment-meta .comment-edit-link::before {}
 
 				.comment-author {
 					margin-top: 14px;
@@ -1304,10 +1320,7 @@ img.size-full {}
 
 			.comment-content {
 				clear: both;
-				padding: 20px;
-				border: 1px solid rgba(0,0,0,0.4);
 			}
-
 
 			/* === Reply link === */
 
