@@ -1294,6 +1294,9 @@ img.size-full {}
 				padding: 20px;
 				background-color: #424254;
 				color: #ffffff;
+			}
+
+			.comment .comment-meta {
 				margin: -20px -20px 20px;
 			}
 
