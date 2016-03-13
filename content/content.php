@@ -36,7 +36,7 @@
 		</header><!-- .entry-header -->
 
 		<div <?php hybrid_attr( 'entry-summary' ); ?>>
-			<?php get_the_image(); ?>
+			<?php get_the_image( array( 'size' => 'post-feature' ) ); ?>
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
 

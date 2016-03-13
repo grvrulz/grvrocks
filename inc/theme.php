@@ -24,6 +24,7 @@ function magik_register_image_sizes() {
 
 	// Sets the 'post-thumbnail' size.
 	//set_post_thumbnail_size( 150, 150, true );
+	add_image_size( 'post-feature', 678, 300, true );
 }
 
 /**

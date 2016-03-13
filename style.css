@@ -603,6 +603,7 @@ img.size-full {}
 			font-size: 32px;
 			line-height: 1.2;
 			margin-bottom: 0;
+			letter-spacing: 1px;
 		}
 
 			#site-title a {
