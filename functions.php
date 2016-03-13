@@ -34,8 +34,8 @@ $magik_dir = trailingslashit( get_template_directory() );
 
 // Load the Hybrid Core framework and theme files.
 require_once( $magik_dir . 'library/hybrid.php'        );
-//require_once( $magik_dir . 'inc/custom-background.php' );
-//require_once( $magik_dir . 'inc/custom-header.php'     );
+require_once( $magik_dir . 'inc/custom-background.php' );
+require_once( $magik_dir . 'inc/custom-header.php'     );
 require_once( $magik_dir . 'inc/theme.php'             );
 
 // Launch the Hybrid Core framework.
