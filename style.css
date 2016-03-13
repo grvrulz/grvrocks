@@ -825,7 +825,16 @@ img.size-full {}
 			color: #999;
 		}
 
-	.breadcrumb-trail .trail-begin {}
+		.breadcrumb-trail .trail-item:last-of-type::after {
+			content: '';
+		}
+
+	.breadcrumb-trail .trail-begin {
+
+	}
+		.breadcrumb-trail .trail-begin::before {
+
+		}
 
 	.breadcrumb-trail .trail-end {}
 
@@ -837,7 +846,7 @@ img.size-full {}
 /* ====== POSTS ====== */
 
 .entry  {
-	padding: 6% 8%;
+	padding: 60px;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
 }
@@ -873,9 +882,6 @@ img.size-full {}
 			.entry-byline a {}
 			.entry-byline a:hover {}
 
-			.entry-terms {
-				display: block;
-			}
 
 			.entry-terms::before,
 			.entry-published::before,
@@ -896,27 +902,16 @@ img.size-full {}
 				content: "\f318";
 			}
 
-			.entry-terms.post_tag::before {
-				content: "\f323";
-			}
-
 			.entry-published::before {
 				content: "\f508";
-			}
-			.entry-author::before {
-				content: "\f338";
 			}
 
 			.entry-permalink::before {
 				content: "\f103";
 			}
 
-			.comments-link::before {
-				content: "\f101";
-			}
-
-			.post-edit-link::before {
-				content: "\f464";
+			.entry-terms.post_tag::before {
+				content: "\f323";
 			}
 
 			.post-format-link[href$=quote]::before {
@@ -945,6 +940,10 @@ img.size-full {}
 
 	.entry-content {}
 
+		.entry-content .moretag {
+			display: block;
+		}
+
 		.entry-content ol,
 		.entry-content ul {
 			margin-bottom: 30px;
@@ -971,6 +970,10 @@ img.size-full {}
 
 	.entry-summary {}
 
+		.entry-summary p::after {
+			content: '\2026';
+		}
+
 	/* === Post Footer === */
 
 	.entry-footer {}
@@ -983,7 +986,9 @@ img.size-full {}
 			.entry-meta .published {}
 
 			.entry-meta .category {}
-			.entry-meta .post_tag {}
+			.entry-meta .post_tag {
+
+			}
 
 	/* === Asides === */
 
@@ -1100,7 +1105,7 @@ img.size-full {}
 /* === Archive-type pages === */
 
 .archive-header {
-	padding: 4% 8% 3%;
+	padding: 30px 60px 20px;
 	text-align: center;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
