@@ -48,7 +48,7 @@ function magik_register_menus() {
  * @return void
  */
 function magik_enqueue_scripts() {
-	wp_enqueue_script( 'hybrid-mobile-toggle' );
+	wp_enqueue_script( 'magik-mobile-js', get_template_directory_uri().'/js/main.js', array( 'jquery' ) );
 }
 
 /**
