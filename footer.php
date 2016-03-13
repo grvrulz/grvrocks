@@ -1,8 +1,4 @@
-			<?php hybrid_get_sidebar( 'primary' ); // Loads the sidebar/primary.php template. ?>
-
 		</div><!-- #main -->
-
-		<?php hybrid_get_sidebar( 'footer' ); // Loads the sidebar/subsidiary.php template. ?>
 
 		<footer <?php hybrid_attr( 'footer' ); ?>>
 

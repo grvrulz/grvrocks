@@ -552,7 +552,7 @@ img.size-full {}
 		padding: 0;
 		margin: 60px auto;
 		background: rgba(255, 255, 255, 0.9);
-		border-radius: 5px;
+		border-radius: 0px;
 		overflow: hidden;
 		box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
 	}
@@ -760,7 +760,29 @@ img.size-full {}
 
 /* ====== BREADCRUMBS ====== */
 
-.breadcrumb-trail {}
+.breadcrumb-trail {
+	padding: 30px 60px;
+	background-color: rgba(240,240,240,0.6);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+}
+
+
+.breadcrumb-trail .trail-browse {
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	clip: rect(0,0,0,0);
+	clip: rect(0 0 0 0);
+}
+
+	.breadcrumb-trail .trail-item {
+		list-style: none;
+		display: inline-block;
+	}
 
 	.breadcrumb-trail .trail-begin {}
 
@@ -1023,7 +1045,9 @@ img.size-full {}
 
 /* === Single post navigation (between different posts) === */
 
-.loop-nav {}
+.loop-nav {
+	padding: 40px 60px;
+}
 
 	.loop-nav a {}
 	.loop-nav a:hover {}
@@ -1034,12 +1058,21 @@ img.size-full {}
 
 /* === Archive-type pages === */
 
-.loop-pagination {}
+.pagination {
+	padding: 40px 60px;
+	text-align: center;
+}
 
-	.loop-pagination .page-numbers {}
+	.pagination .page-numbers {
+		padding: 8px 10px;
+		background: rgba(240,240,240,0.7);
+		border-radius: 2px;
+		margin: 0 3px;
+		box-shadow: 0 0 3px rgba(0,0,0,0.2);
+	}
 
-	.loop-pagination a.page-numbers {}
-	.loop-pagination a.page-numbers:hover {}
+	.pagination a.page-numbers {}
+	.pagination a.page-numbers:hover {}
 
 	.page-numbers.current {}
 

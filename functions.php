@@ -61,7 +61,7 @@ function magik_theme_setup() {
 	add_theme_support( 'get-the-image' );
 
 	// Breadcrumbs. Yay!
-	//add_theme_support( 'breadcrumb-trail' );
+	add_theme_support( 'breadcrumb-trail' );
 
 	// Nicer [gallery] shortcode implementation.
 	add_theme_support( 'cleaner-gallery' );
