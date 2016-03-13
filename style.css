@@ -634,7 +634,7 @@ form {}
 	input:focus[type="button"],
 	input:focus[type="reset"],
 	input:focus[type="submit"],
-	.button:hover {
+	.button:focus {
 		background-color: #CC2A41;
 		color: #fff;
 	}
