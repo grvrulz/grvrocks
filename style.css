@@ -795,7 +795,7 @@ img.size-full {}
 /* ====== BREADCRUMBS ====== */
 
 .breadcrumb-trail {
-	padding: 30px 60px;
+	padding: 20px 60px;
 	background-color: rgba(240,240,240,0.6);
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
@@ -816,7 +816,14 @@ img.size-full {}
 	.breadcrumb-trail .trail-item {
 		list-style: none;
 		display: inline-block;
+		margin-right: 8px;
 	}
+
+		.breadcrumb-trail .trail-item::after {
+			content: '\203a';
+			margin-left: 8px;
+			color: #999;
+		}
 
 	.breadcrumb-trail .trail-begin {}
 
