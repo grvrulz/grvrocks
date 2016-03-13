@@ -161,7 +161,7 @@ code,
 pre {
 	font-family: 'Droid Sans Mono', monospace;
 	font-size: 14px;
-	background: #1d1d1d;
+	background-color: #424254;
 	color: #fafafa;
 	border-radius: 3px;
 }
@@ -1244,8 +1244,10 @@ img.size-full {}
 
 #comments {
 	background: #fff;
-	padding: 40px;
-	margin-bottom: 40px;
+	padding: 40px 60px;
+	margin-bottom: 4px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
 }
 
 	#comments-number {}
@@ -1265,9 +1267,7 @@ img.size-full {}
 		/* === Individual comments */
 
 		li.comment {
-			border-bottom: 3px solid #efefef;
 			margin: 18px 0;
-			padding: 20px;
 		}
 
 		li.ping {}
@@ -1304,6 +1304,8 @@ img.size-full {}
 
 			.comment-content {
 				clear: both;
+				padding: 20px;
+				border: 1px solid rgba(0,0,0,0.4);
 			}
 
 
@@ -1316,7 +1318,10 @@ img.size-full {}
 /* ====== RESPOND (COMMENT FORM) ====== */
 
 #respond {
-	padding: 60px;
+	padding: 30px 60px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+	margin-top: 4px;
 }
 
 	#reply-title {}
