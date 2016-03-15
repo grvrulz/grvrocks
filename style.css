@@ -403,7 +403,15 @@ blockquote {
 
 	blockquote blockquote {}
 
-	blockquote cite {}
+	blockquote cite {
+		font-size: 22px;
+		font-style: italic;
+	}
+
+		blockquote cite::before {
+			content: "‒";
+			margin-right: 4px;
+		}
 
 /* === Acronyms and abbreviations === */
 

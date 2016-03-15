@@ -1,15 +1,5 @@
 <?php
 /**
- * "Funny, 'cause I look around at this world you're so eager to be a part of and all I see is six billion
- * lunatics looking for the fastest ride out. Who's not crazy? Look around, everyone's drinking, smoking,
- * shooting up, shooting each other, or just plain screwing their brains out 'cause they don't want 'em anymore.
- * I'm crazy? Honey, I'm the original one-eyed chicklet in the kingdom of the blind, 'cause at least I admit the
- * world makes me nuts. Name one person who can take it here. That's all I'm asking. Name one."
- * ~ Glorificus (Buffy the Vampire Slayer: Season 5 - Weight of the World)
- *
- * Theme Authors: Make sure to add a favorite quote of yours above, maybe something that inspired you to
- * create this theme.
- *
  * This program is free software; you can redistribute it and/or modify it under the terms of the GNU
  * General Public License as published by the Free Software Foundation; either version 2 of the License,
  * or (at your option) any later version.
@@ -23,9 +13,9 @@
  * @package    HybridBase
  * @subpackage Functions
  * @version    1.0.0
- * @author     Justin Tadlock <justin@justintadlock.com>
- * @copyright  Copyright (c) 2013 - 2015, Justin Tadlock
- * @link       http://themehybrid.com/themes/magik
+ * @author     Gaurav Pareek <me@grv.rocks>
+ * @copyright  Copyright (c) 2015 - 2016, Gaurav Pareek
+ * @link       http://grv.rocks
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
