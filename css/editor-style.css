@@ -1,0 +1,13 @@
+
+@import url( '//fontlibrary.org/face/glacial-indifference' );
+@import url( '../library/css/one-five.min.css' );
+@import url( '../library/css/gallery.min.css' );
+@import url( '../style.min.css' );
+
+/* Styles specific to the editor. */
+
+body#tinymce {
+	margin:    0 auto;
+	padding:   1.5rem 1.5rem 0;
+	border:    none;
+}

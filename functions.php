@@ -67,4 +67,7 @@ function magik_theme_setup() {
 
 	// Handle content width for embeds and images.
 	hybrid_set_content_width( 800 );
+
+	// Editor styles.
+	add_editor_style( get_template_directory_uri().'/css/editor-style.css' );
 }
